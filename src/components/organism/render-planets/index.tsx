@@ -31,10 +31,10 @@ const RenderPlanets: React.FC<RenderPlanetsProps> = ({ planets, loading, error, 
                     targetUrl={String(planet.url).replace("https://swapi.dev/api", "")}
                 />
             ))}
-            <div ref={observerTarget}></div>
+            <div data-testid="observer" ref={observerTarget}></div>
             <div style={{ display: "flex", alignItems: "center", width: "100%", justifyContent: "center" }}>
-                {loading && <Loader />}
-                {error && <p>Error: {error?.message}</p>}
+                {loading && <Loader data-testid="loader" />}
+                {error && <p data-testid="error">Error: {error?.message}</p>}
             </div>
         </StyledContainer>
     )

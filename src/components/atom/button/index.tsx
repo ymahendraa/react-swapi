@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 type Props = ButtonHTMLAttributes<HTMLButtonElement> & {
     background?: string;
-    hoverBackground?: string;
+    hoverbackground?: string;
     color?: string;
     width?: string;
     justifyContent?: string;
@@ -11,21 +11,21 @@ type Props = ButtonHTMLAttributes<HTMLButtonElement> & {
     gap?: string;
     padding?: string;
     flexWrap?: string;
-    borderRadius?: string;
+    borderradius?: string;
     border?: string;
 }
 
 const StyledButton = styled.button<Props>`
     background: ${({ background }) => background || "-webkit-linear-gradient(#ff00e6, #02c4ff)"};
-    color: white;
+    color: ${({ color }) => color || "white"};
     border: none;
     font-weight: bold;
     padding: ${({ padding }) => padding || "10px 20px"};
-    border-radius: ${({ borderRadius }) => borderRadius || "10px"};
+    border-radius: ${({ borderradius: borderRadius }) => borderRadius || "10px"};
     border: ${({ border }) => border || "none"};
     cursor: pointer;
     &:hover {
-        background: ${({ hoverBackground }) => hoverBackground || "-webkit-linear-gradient(#67065d, #085871)"};
+        background: ${({ hoverbackground: hoverBackground }) => hoverBackground || "-webkit-linear-gradient(#67065d, #085871)"};
     }
 
     &:disabled {

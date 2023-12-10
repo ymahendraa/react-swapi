@@ -125,7 +125,7 @@ const RenderPlanetDetail: React.FC<RenderPlanetDetailProps> = ({ planet, loading
             </FlexBox>
             {/* ADD TO WISH LIST BUTTON */}
             <FlexBox justifyContent="flex-end" gap="1rem" color="white" width="100%">
-                <StyledButton background="black" border={`1px solid ${planetExists ? 'red' : 'yellow'}`} hoverBackground="black" onClick={planetExists ? removeFromWishList : saveToWishList}>
+                <StyledButton background="black" border={`1px solid ${planetExists ? 'red' : 'yellow'}`} hoverbackground="black" onClick={planetExists ? removeFromWishList : saveToWishList}>
                     <FlexBox alignItems="center" gap="1rem" padding="0">
                         {planetExists ? <IoIosRemoveCircleOutline size={25} color="red" /> : <IoMdAddCircleOutline size={25} color="yellow" />
                         }

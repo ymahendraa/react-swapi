@@ -48,7 +48,7 @@ const PlanetCard: React.FC<CardProps> = ({ header, imageSrc, content, targetUrl 
                 <InfoText>{content}</InfoText>
             </CardContent>
             <div style={{ display: 'flex', justifyContent: 'flex-end', width: '100%' }}>
-                <StyledButton onClick={handleClick} background='black' border='1px solid white' hoverBackground='white'>
+                <StyledButton onClick={handleClick} background='black' border='1px solid white' hoverbackground='white'>
                     <GradientText color1="#ff00e6" color2="#02c4ff" fontSize="12px" fontWeight="500">Read More</GradientText>
                 </StyledButton>
             </div>

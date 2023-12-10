@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StyledButton Component applies custom styles 1`] = `
+.c0 {
+  background: blue;
+  color: yellow;
+  border: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.c0:hover {
+  background: blue;
+}
+
+.c0:disabled {
+  background: #d3d3d3;
+  cursor: not-allowed;
+}
+
+<button
+  background="blue"
+  borderradius="5px"
+  class="c0"
+  color="yellow"
+  hoverbackground="blue"
+>
+  Click me
+</button>
+`;
+
+exports[`StyledButton Component applies disabled styles 1`] = `
+.c0 {
+  background: -webkit-linear-gradient(#ff00e6, #02c4ff);
+  color: white;
+  border: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.c0:hover {
+  background: -webkit-linear-gradient(#67065d, #085871);
+}
+
+.c0:disabled {
+  background: #d3d3d3;
+  cursor: not-allowed;
+}
+
+<button
+  class="c0"
+  disabled=""
+>
+  Click me
+</button>
+`;
+
+exports[`StyledButton Component renders button with default styles 1`] = `
+.c0 {
+  background: -webkit-linear-gradient(#ff00e6, #02c4ff);
+  color: white;
+  border: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.c0:hover {
+  background: -webkit-linear-gradient(#67065d, #085871);
+}
+
+.c0:disabled {
+  background: #d3d3d3;
+  cursor: not-allowed;
+}
+
+<button
+  class="c0"
+>
+  Click me
+</button>
+`;
